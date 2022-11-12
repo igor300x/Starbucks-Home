@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #F4E9D9;
+  height: 100vh;
+}
+
+.orange {
+  background-color: #ebc394;
+}
+
+.main {
+  color: #00643B;
+  position: static;
+
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0px;
+  margin-top: 30px;
+  margin-left: 4%;
+  position: relative;
+  z-index: 1;
+  gap: 30px;
+}
+
+.link-menu,
+.button-menu {
+  color: #00643B;
+  text-decoration: none;
+}
+
+.logo-starbucks {
+  width: 60px;
+  height: 60px;
+  top: 23px;
+  left: 81px;
+}
+
+.button-menu {
+  color: #FFFFFF;
+  padding: 15px 40px;
+  gap: 10px;
+  width: 217px;
+  height: 49px;
+  background: #00643B;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), inset 5px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+section {
+  display: inline-block;
+
+}
+
+.section-meio {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  width: 526px;
+  height: 413px;
+  left: 5%;
+  top: calc(50% - 413px/2 + 61px);
+  top: 209px;
+}
+
+h1 {
+  height: 192px;
+  font-weight: 600px;
+  font-size: 55px;
+  line-height: 64px;
+
+}
+
+p {
+  width: 444px;
+  height: 76px;
+  font-size: 20px;
+  line-height: 23px;
+  margin: 43px 0px;
+}
+
+.button-main {
+  padding: 20px 30px;
+  gap: 10px;
+  width: 197px;
+  height: 59px;
+  color: #FFFFFF;
+  background: #00643B;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), inset 5px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: #00643B;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  opacity: 0.7;
+}
+
+.png {
+  position: absolute;
+  left: 580px;
+  top: 0px;
+  height: 100%;
+
+}
+
+.png-icons {
+  position: absolute;
+  width: 30px;
+  height: 112px;
+  left: 625px;
+  top: 344px;
+  cursor: pointer;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+#ice {
+  display: none;
+}
+
+
+
+@media (max-width: 760px) {
+  * {
+    margin: 0;
+    left: 0;
+  }
+
+  .link {
+    display: flex;
+    margin: 15px;
+    gap: 15px;
+
+  }
+
+
+  .section-meio {
+    letter-spacing: 0.5px;
+    width: 330px;
+    top: 110px;
+    margin: 0 10px;
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    font-size: 33px;
+    line-height: initial;
+    width: 300px;
+    height: auto;
+  }
+
+  p {
+    font-size: 18px;
+    width: 310px;
+    margin-top: 260px;
+    font-weight: 400px;
+
+  }
+
+  .button-menu {
+    display: none;
+  }
+
+  .button-main {
+    width: auto;
+    height: auto;
+    margin-bottom: 15px;
+    
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .png {
+    display: none
+  }
+
+  #ice {
+    opacity: 0.5;
+    position: absolute;
+    display: inline-flex;
+    height: 80%;
+    top: 16%;
+  }
+
+}
